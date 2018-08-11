@@ -1,32 +1,32 @@
 import java.util.*;
-class highestnumber
+public class highestnumber
  { 
- 	static int n1, n2, n3;
- 	static Scanner hn=new Scanner (System.in);
+	static int[] cache;
+ 	static Scanner hn = new Scanner (System.in);
  	
 	public static void main(String args[])
  	{ 
 
-
-		System.out.println("Number 1: ");
-		n1=hn.nextInt();
-		System.out.println("Number 2: ");
-		n2=hn.nextInt();
-		System.out.println("Number 3: ");
-		n3=hn.nextInt();
+		System.out.println("Please enter how many numbers are we checking");
+		int n = hn.nextInt();
 		
-		if (n1>n2 && n1>n3) {
-			System.out.println("Highest Number "+n1);
+		if (n != (int) n || n == (int) 1){
+			System.out.println("Wrong input, please try again");
+			return;
 		}
-		else if (n2>n1 && n2>n3) {
-			System.out.println("Highest Number "+n2);
-		}
-		else {
-			System.out.println("Highest Number "+n3);
-		}
-			
 		
-
-
+		cache = new int[n];
+		
+		System.out.println("Please enter your numbers");
+		int val = hn.nextInt();
+		int i = 0;
+		while (i != n){
+			cache[i] = val;
+			i++;
+		}
+		
+		Arrays.sort(cache);
+		System.out.println(Arrays.toString(cache));
+      
  	}
  }
