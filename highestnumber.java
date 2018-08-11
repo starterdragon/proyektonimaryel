@@ -20,7 +20,7 @@ public class highestnumber
 		int i = 0;
 		do {
 
-		    System.out.println("Please a number:");
+		    System.out.println("Please enter a number:");
 		    int val = hn.nextInt();
 			cache[i] = val;
 			i++;
