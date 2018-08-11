@@ -7,7 +7,7 @@ public class highestnumber
 	public static void main(String args[])
  	{ 
 
-		System.out.println("Please enter how many numbers are we checking");
+		System.out.println("Please enter how many numbers are we checking:");
 		int n = hn.nextInt();
 		
 		if (n != (int) n || n == (int) 1){
@@ -19,13 +19,14 @@ public class highestnumber
 		
 		int i = 0;
 		do{
-		    System.out.println("Please enter your numbers");
+		    System.out.println("Please a number:");
 		    int val = hn.nextInt();
 			cache[i] = val;
 			i++;
 		}while (i != n);
 		
-		Arrays.sort(cache);
+		Arrays.sort(cache, Collections.reverseOrder());
+		
 		System.out.println(Arrays.toString(cache));
       
  	}
