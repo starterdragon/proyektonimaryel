@@ -17,13 +17,13 @@ public class highestnumber
 		
 		cache = new int[n];
 		
-		System.out.println("Please enter your numbers");
-		int val = hn.nextInt();
 		int i = 0;
-		while (i != n){
+		do{
+		    System.out.println("Please enter your numbers");
+		    int val = hn.nextInt();
 			cache[i] = val;
 			i++;
-		}
+		}while (i != n);
 		
 		Arrays.sort(cache);
 		System.out.println(Arrays.toString(cache));
