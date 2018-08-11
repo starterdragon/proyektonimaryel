@@ -7,7 +7,7 @@ public class highestnumber
 	public static void main(String args[])
  	{ 
 
-		System.out.println("Please enter how many numbers are we checking:");
+		System.out.println("Please enter how many numbers we're going check:");
 		int n = hn.nextInt();
 		
 		if (n == 1){
