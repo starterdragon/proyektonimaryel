@@ -25,9 +25,9 @@ public class highestnumber
 			i++;
 		}while (i != n);
 		
-		Arrays.sort(cache, Collections.reverseOrder());
-		
-		System.out.println(Arrays.toString(cache));
+		IntSummaryStatistics stat = Arrays.stream(cache).summaryStatistics();
+        int high = stat.getMax();
+		System.out.println("Highest number is: " + high);
       
  	}
  }
