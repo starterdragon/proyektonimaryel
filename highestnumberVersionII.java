@@ -5,8 +5,7 @@ public class highestnumberVersionII
  	
 	public static void main(String args[])
  	{ 
-        Scanner patricia = new Scanner (System.in);
-        actual( patricia );
+        	actual( new Scanner (System.in) );
  	}
  	
  	public static void actual( Scanner patricia ){
